@@ -7,7 +7,7 @@ Each folder is a **self-contained implementation of one concept**: no shared pac
 ```bash
 cd react-loop
 pip install -r requirements.txt
-python agent.py
+python react_loop.py
 ```
 
 ## Index
@@ -21,9 +21,13 @@ python agent.py
 | 5 | The parts of an agent harness | [The parts of a harness](https://benmcloughlin.com/learning/harness-engineering) | [`harness-engineering/`](harness-engineering/) |
 | 6 | Prompt caching — stop paying to re-read the same prompt | [You're paying to re-read the same prompt](https://benmcloughlin.com/learning/prompt-caching) | [`prompt-caching/`](prompt-caching/) |
 
+## How this relates to the articles
+
+The articles show the **quick, trimmed listings** — the smallest version of each idea that keeps the mechanics visible on a page. The folders here hold the **full implementations**: the same code, plus the pieces the articles discuss but cut for readability (step limits, error handling, environment setup). Read the article to understand the idea; clone the folder to run and extend it.
+
 ## What this is (and isn't)
 
-- **Is:** minimal, annotated implementations built to teach. Each one is the smallest complete version of the idea that actually runs.
+- **Is:** complete, annotated, runnable implementations built to teach.
 - **Isn't:** production code. No retries-of-retries, no auth layers, no framework abstractions. Take the ideas, not the files, into production.
 
 ## Setup
