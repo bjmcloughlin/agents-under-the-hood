@@ -86,14 +86,16 @@ while True:
         messages=messages,
     )
 
+    # A turn with no tool calls is the final answer — the healthy exit.
+    tool_calls = [b for b in response.content if b.type == "tool_use"]
+    print(f"\n[STEP {step}]" if tool_calls else "\n[FINAL]")
+
     for block in response.content:
         if block.type == "thinking" and block.thinking:
             print(f"[THINKING] {block.thinking.strip()}")
         elif block.type == "text":
             print(f"[CLAUDE] {block.text.strip()}")
 
-    # A turn with no tool calls is the final answer — the healthy exit.
-    tool_calls = [b for b in response.content if b.type == "tool_use"]
     if not tool_calls:
         break
 
