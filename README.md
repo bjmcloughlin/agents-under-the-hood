@@ -21,6 +21,7 @@ python react_loop.py
 | 5 | The parts of an agent harness | [The parts of a harness](https://benmcloughlin.com/learning/harness-engineering) | *article only* |
 | 6 | Prompt caching — stop paying to re-read the same prompt | [You're paying to re-read the same prompt](https://benmcloughlin.com/learning/prompt-caching) | [`prompt-caching/`](prompt-caching/) |
 | 7 | Building an MCP server — tools in a process of their own, tested with the Inspector | [Building an MCP server](https://benmcloughlin.com/learning/building-mcp-servers) | [`mcp-server/`](mcp-server/) |
+| 8 | Hosting an MCP server — HTTP, token checks, secrets and identities, with Azure as the example | [Hosting an MCP server](https://benmcloughlin.com/learning/hosting-mcp-servers) | [`mcp-server/`](mcp-server/) |
 
 ## How this relates to the articles
 

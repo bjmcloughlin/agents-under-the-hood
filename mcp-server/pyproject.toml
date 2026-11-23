@@ -5,7 +5,8 @@ description = "A small MCP server over the Open Library API, built to teach the 
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "mcp>=2.2",
+    "mcp>=2.3,<3",
+    "pyjwt[crypto]>=2.9",
     "requests>=2.32",
 ]
 
